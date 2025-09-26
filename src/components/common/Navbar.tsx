@@ -28,21 +28,30 @@ export default function Navbar() {
         </ul>
       </nav>
 
-      <div className={`fixed top-0 right-0 h-full w-64 bg-teal-950 transform ${isOpen ? "translate-x-0" : "translate-x-full"} transition-transform duration-300 ease-in-out z-50 p-6`}>
-        <button onClick={() => setIsOpen(!isOpen)}>
-          {isOpen && <FiX size={24} color="white" className="absolute top-3 -left-6 bg-indigo-600 p-1 rounded-tl-lg" />}
-        </button>
-        <ul className="flex flex-col space-y-6">
-          <li>
-            <Link href="/courses" className="text-white font-semibold" onClick={() => setIsOpen(false)}>Courses</Link>
-          </li>
-          <li>
-            <Link href="/resources" className="text-white font-semibold" onClick={() => setIsOpen(false)}>Resources</Link>
-          </li>
-          <li>
-            <Link href="/auth" className="text-white font-semibold" onClick={() => setIsOpen(false)}>Sign In</Link>
-          </li>
-        </ul>
+      <div className={`${isOpen && 'fixed inset-0 backdrop-blur-[3px] z-50'}`}>
+        <div className={`fixed top-0 right-0 h-full w-64 bg-gray-950 border-l border-gray-800 transform ${isOpen ? "translate-x-0" : "translate-x-full"} transition-transform duration-300 ease-in-out z-50 px-6 py-2`}>
+          <button onClick={() => setIsOpen(!isOpen)} className="relative group">
+            {isOpen && (
+              <div className="absolute top-0 -left-[3.6rem]">
+                <div className="relative bg-gray-900/95 backdrop-blur-sm p-1 rounded-lg shadow-2xl border border-gray-600/30 transform transition-transform duration-300 hover:scale-105">
+                  <FiX size={24} color="white" className="filter drop-shadow"/>
+                  <div className="absolute inset-0 rounded-lg bg-gradient-to-r from-indigo-500/10 to-purple-500/10" />
+                </div>
+              </div>
+            )}
+          </button>
+          <ul className="flex flex-col space-y-6">
+            <li>
+              <Link href="/courses" className="text-white font-semibold" onClick={() => setIsOpen(false)}>Courses</Link>
+            </li>
+            <li>
+              <Link href="/resources" className="text-white font-semibold" onClick={() => setIsOpen(false)}>Resources</Link>
+            </li>
+            <li>
+              <Link href="/auth" className="text-white font-semibold" onClick={() => setIsOpen(false)}>Sign In</Link>
+            </li>
+          </ul>
+        </div>
       </div>
 
       <div className="md:hidden">
