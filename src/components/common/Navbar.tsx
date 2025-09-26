@@ -42,11 +42,11 @@ export default function Navbar() {
         <div className="px-6 py-4">
           {isOpen && (
             <button onClick={() => setIsOpen(false)} className="absolute top-0 -left-8.5 z-60">
-            <div className="relative bg-gray-900/95 backdrop-blur-sm p-1 rounded-tl-xl rounded-bl-xl shadow-2xl border border-gray-600/30 transform transition-transform duration-300 hover:scale-105">
-              <FiX size={24} color="white" className="filter drop-shadow"/>
-              <div className="absolute inset-0 rounded-tl-xl rounded-bl-xl shadow-2xl bg-gradient-to-r from-indigo-500/10 to-purple-500/10" />
-            </div>
-          </button>
+              <div className="relative bg-gray-900/95 backdrop-blur-sm p-1 rounded-tl-xl rounded-bl-xl shadow-2xl border border-gray-600/30 transform transition-transform duration-300 hover:scale-105">
+                <FiX size={24} color="white" className="filter drop-shadow"/>
+                <div className="absolute inset-0 rounded-tl-xl rounded-bl-xl shadow-2xl bg-gradient-to-r from-indigo-500/10 to-purple-500/10" />
+              </div>
+            </button>
           )}
 
           <nav className="mt-8">
