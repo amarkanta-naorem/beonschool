@@ -38,7 +38,7 @@ export default function Home() {
             <span className="font-semibold text-blue-300"> bridge the gap between knowledge and practical skill</span>.
           </p>
 
-          <div className="w-full max-w-2xl mt-10 md:mt-0">
+          <div className="w-full max-w-2xl mt-8 md:mt-0">
             <div className="relative group">
               <input ref={searchInputRef} type="text" className="w-full p-4 pl-6 pr-26 md:pr-32 bg-gray-900 border border-gray-700 rounded-2xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 group-hover:border-gray-600" placeholder="Search skills, tech, or projects..."/>
               
