@@ -43,7 +43,7 @@ export default function Home() {
             </ul>
           </div>
 
-          <div className="flex flex-col items-center justify-center p-4 sm:p-6 lg:p-8 xl:p-10 w-full lg:w-1/2 bg-gray-800">
+          <div className="flex flex-col items-center justify-center p-4 sm:p-6 lg:p-8 xl:p-10 w-full lg:w-1/2 md:bg-gray-800">
             <div className="flex justify-center mb-4 sm:mb-6 lg:mb-8">
               <Image src="/images/Logo.png" alt="Logo" width={48} height={48} className="w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14 xl:w-16 xl:h-16 object-contain"/>
             </div>
