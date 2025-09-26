@@ -75,7 +75,7 @@ export default function Home() {
               </div>
 
               <div className="flex w-full">
-                <select value="+91" disabled className="w-14 sm:w-16 lg:w-20 h-9 sm:h-10 lg:h-11 xl:h-12 px-2 sm:px-3 rounded-l-lg bg-gray-700 text-white border border-gray-600 focus:outline-none">
+                <select value="+91" disabled className="w-14 sm:w-16 lg:w-20 h-9 sm:h-10 lg:h-11 xl:h-12 rounded-l-lg bg-gray-700 text-white border border-gray-600 focus:outline-none">
                   <option value="+91">+91</option>
                 </select>
                 <input type="tel" placeholder="Enter phone number" className="h-9 sm:h-10 lg:h-11 xl:h-12 flex-grow px-2 sm:px-3 lg:px-4 rounded-r-lg bg-gray-700 text-white placeholder-gray-400 border border-gray-600 focus:outline-none focus:ring-1 focus:ring-blue-500"/>
