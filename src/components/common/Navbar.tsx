@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import BeOnSchoolLogo from "./BeOnSchoolLogo";
-import { FiMenu, FiX } from "react-icons/fi"; // Hamburger & Close icons
+import { FiMenu, FiX } from "react-icons/fi";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
