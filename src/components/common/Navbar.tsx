@@ -30,7 +30,7 @@ export default function Navbar() {
 
       <div className="md:hidden">
         <button onClick={() => setIsOpen(!isOpen)}>
-          {!isOpen && <FiMenu size={24} color="white" />}
+          {!isOpen && <FiMenu size={28} color="white" />}
         </button>
       </div>
 
