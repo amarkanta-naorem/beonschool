@@ -71,7 +71,7 @@ export default function Home() {
             <div className="w-full max-w-md space-y-4 sm:space-y-5 lg:space-y-6">
               <div className="text-center">
                 <h1 className="font-semibold text-sm sm:text-base lg:text-lg xl:text-xl text-white">Enter your phone number</h1>
-                <p className="text-xs sm:text-sm lg:text-base text-gray-400">We'll send you a text with a verification code.</p>
+                <p className="text-xs sm:text-sm lg:text-base text-gray-400">We&apos;ll send you a text with a verification code.</p>
               </div>
 
               <div className="flex w-full">
