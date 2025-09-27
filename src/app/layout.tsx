@@ -32,7 +32,7 @@ export default function RootLayout({
         <link rel="icon" type="image/x-icon" href="/favicon.ico" />
         <meta name="theme-color" content="#ffffff" />
       </head>
-      <body className={`${poppins.variable} font-sans bg-gray-950 h-[100vh] overflow-y-scroll custom-scrollbar`}>
+      <body className={`${poppins.variable} font-sans bg-gray-950 h-[100vh] overflow-y-scroll no-scrollbar`}>
         <Navbar />
         {children}
       </body>
